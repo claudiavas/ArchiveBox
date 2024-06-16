@@ -4,7 +4,8 @@
   "description": "A Node.js Express application",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "build": "docker-compose up"
   },
   "dependencies": {
     "express": "^4.17.1"
