@@ -1,12 +1,11 @@
-const express = require('express');
-const IndexController = require('../controllers/index');
+import express from 'express';
+import  IndexController from '../controllers/index.js';
 
 const router = express.Router();
 const indexController = new IndexController();
 
-function setRoutes() {
+export const setRoutes = () => {
   router.get('/', indexController.getIndex);
   return router;
 }
 
-module.exports = setRoutes;
